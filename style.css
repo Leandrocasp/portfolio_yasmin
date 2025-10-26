@@ -1,0 +1,148 @@
+/* Estilos CSS - O Design Mais Lindo do Mundo */
+        :root {
+            /* Cores Suaves e Vibrantes */
+            --rosa-principal: #FFC0CB; /* Rosa Bebê (Pastel) */
+            --azul-secundario: #ADD8E6; /* Azul Claro (Pastel) */
+            --rosa-destaque: #FF69B4; /* Rosa Choque */
+            --azul-destaque: #1E90FF; /* Azul Dodgem */
+            --cor-fundo-claro: #FFFFFF; /* Branco Puro */
+            --cor-texto-escuro: #333333;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--rosa-principal) 0%, var(--azul-secundario) 100%);
+            color: var(--cor-texto-escuro);
+            line-height: 1.6;
+        }
+
+        /* ------------------ CABEÇALHO (HEADER) ------------------ */
+        header {
+            background-color: var(--cor-fundo-claro);
+            padding: 50px 20px 30px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid var(--rosa-destaque);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive; /* Fonte manuscrita charmosa */
+            margin: 0;
+            font-size: 4.5em; /* Maior e mais impactante */
+            color: var(--rosa-destaque);
+            text-shadow: 3px 3px 0 var(--azul-secundario);
+            animation: pulse 2s infinite alternate; /* Animação sutil */
+            line-height: 1.1; /* Ajuste para o nome */
+        }
+
+        header p {
+            font-size: 1.4em;
+            margin-top: 15px;
+            color: var(--azul-destaque);
+            font-weight: 700;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.02); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* ------------------ SEÇÕES DE TEXTO E DETALHES ------------------ */
+        .secao-card {
+            background-color: var(--cor-fundo-claro);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+        
+        .secao-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .secao-card h2 {
+            font-family: 'Pacifico', cursive;
+            color: var(--azul-destaque);
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed var(--rosa-principal);
+            padding-bottom: 10px;
+        }
+        
+        /* Estilo da seção "Sobre Ela" (Detalhes) */
+        .sobre-ela {
+            border: 5px solid var(--azul-destaque);
+            text-align: center;
+        }
+
+        .detalhes-idade p {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--cor-texto-escuro);
+        }
+        
+        .detalhes-idade strong {
+            color: var(--rosa-destaque);
+            font-size: 1.1em;
+        }
+
+        /* ------------------ GALERIA (LAYOUT MASONRY) ------------------ */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .foto-item {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background-color: white;
+            border: 4px solid var(--rosa-principal);
+            cursor: pointer;
+        }
+
+        .foto-item:hover {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: auto; 
+            display: block;
+            transition: opacity 0.4s ease;
+        }
+        
+        .foto-item:hover img {
+            opacity: 0.85;
+        }
+
+        /* ------------------ RODAPÉ (FOOTER) ------------------ */
+        footer {
+            background-color: var(--azul-destaque);
+            color: var(--cor-fundo-claro);
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+            font-style: italic;
+            font-weight: 300;
+        }

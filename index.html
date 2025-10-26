@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 Yasmin Lima Pereira - O Portfólio Mais Lindo do Mundo 🌟</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+    <header>
+        <h1>Yasmin Lima Pereira</h1>
+        <p>A Luz da Nossa Vida e Dona Deste Lindo Portfólio</p>
+    </header>
+
+    <div class="container">
+
+        <section class="secao-card sobre-ela">
+            <h2>✨ Sobre a Nossa Estrela ✨</h2>
+            <div class="detalhes-idade">
+                <p>Nome Completo: <strong>Yasmin Lima Pereira</strong></p>
+                <p>Data de Nascimento: <strong>08 de Setembro de 2014</strong></p>
+                <p>Idade Atual: <strong id="idade-aniversario">Calculando...</strong></p>
+            </div>
+        </section>
+        
+        <section class="secao-card texto-inspirador">
+            <h2>A Mensagem do Coração</h2>
+            <p style="font-size: 1.2em; max-width: 900px; margin: 0 auto; text-align: justify; font-weight: 400;">
+                Minha querida **Yasmin**, este portfólio é um espelho digital do quanto você é preciosa para nós. 
+                Sua essência é feita de pura luz e alegria. Você é uma pessoa incrivelmente **linda**, 
+                não apenas por fora, mas pela bondade e doçura que carrega no seu coração. Cada dia ao seu lado é uma aventura, 
+                repleta de risadas e aprendizados. Você é **amável** de uma forma única, conquistando a todos com seu carisma e afeto genuíno. 
+                Saiba que você é **especial** em cada detalhe, em cada sonho que persegue, e é **profundamente amada por todos** que 
+                têm a honra de testemunhar seu crescimento. Continue brilhando, explorando e espalhando essa magia por onde for!
+            </p>
+        </section>
+
+        <section class="galeria">
+            <div class="foto-item"><img src="imagens/foto1.jpeg" alt="Pai e Filha com camisa de time"></div>
+            <div class="foto-item"><img src="imagens/foto2.jpeg" alt="Criança sorrindo em vestido florido"></div>
+            <div class="foto-item"><img src="imagens/foto3.jpeg" alt="Família em frente a uma montanha de neve"></div>
+            <div class="foto-item"><img src="imagens/foto4.jpeg" alt="Reunião familiar em ambiente interno"></div>
+            <div class="foto-item"><img src="imagens/foto5.jpeg" alt="Selfie da família em frente a um fundo rosa"></div>
+            <div class="foto-item"><img src="imagens/foto6.jpeg" alt="Mãe e filha sorrindo sob uma cobertura de palha"></div>
+            <div class="foto-item"><img src="imagens/foto7.jpeg" alt="Festa de Halloween com família"></div>
+            <div class="foto-item"><img src="imagens/foto8.jpeg" alt="Aniversário com bolo temático de viagem"></div>
+            <div class="foto-item"><img src="imagens/foto9.jpeg" alt="Criança em frente à Fontana di Trevi, Roma"></div>
+            <div class="foto-item"><img src="imagens/foto10.jpeg" alt="Criança com Mickey Mouse na Disney"></div>
+            <div class="foto-item"><img src="imagens/foto11.jpeg" alt="Pai e Filha com camisa de time"></div>
+            <div class="foto-item"><img src="imagens/foto12.jpeg" alt="Criança sorrindo em vestido florido"></div>
+            <div class="foto-item"><img src="imagens/foto13.jpeg" alt="Família em frente a uma montanha de neve"></div>
+            <div class="foto-item"><img src="imagens/foto14.jpeg" alt="Reunião familiar em ambiente interno"></div>
+            <div class="foto-item"><img src="imagens/foto15.jpeg" alt="Selfie da família em frente a um fundo rosa"></div>
+            <div class="foto-item"><img src="imagens/foto16.jpeg" alt="Mãe e filha sorrindo sob uma cobertura de palha"></div>
+            <div class="foto-item"><img src="imagens/foto17.jpeg" alt="Festa de Halloween com família"></div>
+            <div class="foto-item"><img src="imagens/foto18.jpeg" alt="Aniversário com bolo temático de viagem"></div>
+            <div class="foto-item"><img src="imagens/foto19.jpeg" alt="Criança em frente à Fontana di Trevi, Roma"></div>
+            <div class="foto-item"><img src="imagens/foto20.jpeg" alt="Criança com Mickey Mouse na Disney"></div>
+            
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Desenvolvido com carinho e o melhor do design para você. O amor não tem limites!</p>
+    </footer>
+
+    <script>
+        // Função JavaScript para calcular a idade de forma dinâmica
+        function calcularIdade() {
+            // Data de nascimento: 08/09/2014
+            const dataNascimento = new Date("2014-09-08T00:00:00");
+            const hoje = new Date();
+            let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+            const mes = hoje.getMonth() - dataNascimento.getMonth();
+            
+            // Ajusta a idade se o aniversário ainda não passou neste ano
+            if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
+                idade--;
+            }
+            
+            document.getElementById("idade-aniversario").innerText = `${idade} anos`;
+        }
+        
+        // Executa a função ao carregar a página
+        calcularIdade();
+    </script>
+
+</body>
+</html>
